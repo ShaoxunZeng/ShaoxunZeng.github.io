@@ -1,0 +1,515 @@
+/* ===== 基础与排版：极简现代 ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background: #fff;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 17px;
+    line-height: 1.65;
+  }
+}
+
+/* ===== 布局容器 ===== */
+.page-wrap {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 0 1.25rem 3rem;
+}
+
+@media (min-width: 768px) {
+  .page-wrap {
+    padding: 0 2rem 4rem;
+  }
+}
+
+/* ===== 页头 ===== */
+.header-flex {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0 1.5rem;
+  flex-wrap: wrap;
+}
+
+.header-flex .info {
+  flex: 1;
+  min-width: 0;
+  line-height: 1.5;
+}
+
+.header-flex h1 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.625rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+@media (min-width: 768px) {
+  .header-flex h1 {
+    font-size: 1.875rem;
+  }
+}
+
+.header-flex .info p {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.0625rem;
+  color: #444;
+}
+
+.header-flex .info p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .header-flex .info p {
+    font-size: 1.125rem;
+  }
+}
+
+.avatar-rect {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .avatar-rect {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* ===== 页内导航 ===== */
+.section-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  gap: 1.75rem;
+  padding: 0.7rem 0;
+  margin-bottom: 2rem;
+  background: #fff;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.section-nav a {
+  color: #555;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  padding: 0;
+}
+
+.section-nav a:hover {
+  color: #0066cc;
+}
+
+/* ===== 主内容区 ===== */
+main {
+  padding-top: 0;
+}
+
+section {
+  margin-bottom: 2.5rem;
+  scroll-margin-top: 4rem;
+}
+
+section:last-of-type {
+  margin-bottom: 2rem;
+}
+
+/* ===== 标题 ===== */
+h2 {
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.375rem;
+    margin: 0 0 1.25rem 0;
+  }
+}
+
+h3 {
+  margin: 1.1rem 0 0.35rem 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+/* ===== 正文与列表 ===== */
+p {
+  margin: 0 0 0.85em 0;
+  color: #333;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0 0 1em 0;
+  padding-left: 1.25rem;
+}
+
+/* 段落后的列表：与列表项间距一致，避免“紧贴上文” */
+p + ul {
+  margin-top: 0.5em;
+}
+
+li {
+  margin-bottom: 0.35em;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* Research：嵌套列表保持紧凑，但使用合理间距值 */
+#research p + ul {
+  margin-top: 0.3em;
+}
+#research p:has(+ ul) {
+  margin-bottom: 0.35em;
+}
+#research ul + p {
+  margin-top: 1em;
+}
+#research ul {
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+  padding-left: 1.2rem;
+}
+#research > ul > li {
+  margin-bottom: 0.4em;
+}
+#research ul ul {
+  margin-top: 0.2em;
+  margin-bottom: 0;
+  padding-left: 1rem;
+}
+#research li li {
+  margin-bottom: 0.2em;
+}
+#research li li:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== 链接 ===== */
+a {
+  text-decoration: none;
+  color: #1a1a1a;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+  padding: 0.1em 0;
+}
+
+a:hover {
+  color: #0066cc;
+  border-bottom-color: #0066cc;
+}
+
+a:focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+.blue-tag {
+  color: #0066cc;
+  border-bottom-color: rgba(0, 102, 204, 0.3);
+}
+
+.blue-tag:hover {
+  color: #004499;
+  border-bottom-color: #004499;
+}
+
+.accent {
+  color: #1f77b4;
+}
+
+/* ===== Services 区块 ===== */
+#services .service-label {
+  margin: 0 0 0.4em 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* 第二个及之后的分组标签，加顶部间距与前组分开 */
+#services .service-list + .service-label {
+  margin-top: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  #services .service-label {
+    font-size: 1.0625rem;
+  }
+}
+
+#services .service-list {
+  margin: 0 0 1.25rem 0;
+  padding-left: 1.25rem;
+}
+
+#services .service-list li {
+  margin-bottom: 0.4em;
+  font-size: 1rem;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  #services .service-list li {
+    font-size: 1.0625rem;
+  }
+}
+
+#services .service-content {
+  margin: 0 0 0 1.25rem;
+  padding-left: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  #services .service-content {
+    font-size: 1.0625rem;
+  }
+}
+
+/* ===== 论文与奖项 ===== */
+#paper-list {
+  display: grid;
+  grid-template-columns: 4rem minmax(0, 1fr);
+  column-gap: 1.5rem;
+}
+
+#paper-list > ul {
+  margin: 0 0 1.35rem;
+  padding: 0;
+  list-style: none;
+}
+
+.paper-heading {
+  display: block;
+  line-height: 1.45;
+  margin-bottom: 0.12rem;
+}
+
+.paper-title {
+  font-weight: 500;
+}
+
+.paper-venue-tag {
+  font-weight: 650;
+  margin-right: 0.3em;
+}
+
+.authors {
+  display: inline;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.45;
+}
+
+.venue-full {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.45;
+}
+
+.award-inline {
+  font-size: 0.875rem;
+  color: #c41e3a;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.award {
+  font-size: 0.875rem;
+  color: #c41e3a;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.highlight {
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+/* 论文条目：与正文行高一致，上下 padding 对称 */
+#paper-list li {
+  margin: 0;
+  line-height: 1.45;
+  padding: 0.65rem 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+#paper-list li:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+#paper-list li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* 年份分组标题 */
+#paper-list h3 {
+  margin: 0;
+  padding-top: 0.65rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #777;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+#paper-list > h3:first-child {
+  padding-top: 0;
+}
+
+#paper-list > h3:first-child + ul > li:first-child {
+  padding-top: 0;
+}
+
+/* paper list 加载/错误状态 */
+.paper-list-loading,
+.paper-list-error {
+  color: #888;
+  font-style: italic;
+}
+
+/* ===== 页脚 ===== */
+footer {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #666;
+  border-top: 1px solid #eee;
+}
+
+footer p {
+  margin: 0;
+  color: #666;
+}
+
+/* ===== Awards 列表：与 Services 节奏一致 ===== */
+#awards ul {
+  margin-top: 0.25em;
+  margin-bottom: 0;
+}
+#awards li {
+  margin-bottom: 0.4em;
+}
+#awards li:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== 移动端：页头与触控优化 ===== */
+@media (max-width: 567px) {
+  .page-wrap {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.25rem 0 1rem;
+  }
+
+  .header-flex .info {
+    width: 100%;
+  }
+
+  .header-flex h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-flex .info p {
+    font-size: 1rem;
+  }
+
+  .avatar-rect {
+    width: 104px;
+    height: 104px;
+  }
+
+  .section-nav {
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin: 0 -0.15rem 1.75rem;
+    padding: 0.65rem 0.15rem;
+  }
+
+  .section-nav a {
+    font-size: 0.8125rem;
+  }
+
+  section {
+    margin-bottom: 2rem;
+  }
+
+  #paper-list {
+    display: block;
+  }
+
+  #paper-list h3 {
+    padding-top: 0;
+    margin: 1.75rem 0 0.2rem;
+  }
+
+  #paper-list > h3:first-child {
+    margin-top: 0;
+  }
+
+  #paper-list > ul {
+    margin-bottom: 0;
+  }
+
+  #paper-list li {
+    padding: 0.55rem 0;
+  }
+}
+
+/* ===== 宽屏 ===== */
+@media (min-width: 1200px) {
+  .page-wrap {
+    max-width: 60rem;
+  }
+}

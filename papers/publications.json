@@ -1,0 +1,133 @@
+[
+  {
+    "title": "GPU Checkpoint/Restore Made Fast and Lightweight",
+    "authors": [
+      "Shaoxun Zeng",
+      "Tingxu Ren",
+      "Jiwu Shu",
+      "Youyou Lu"
+    ],
+    "venue": "The 24th USENIX Conference on File and Storage Technologies",
+    "short": "FAST'26",
+    "year": 2026,
+    "link": "https://www.usenix.org/conference/fast26/presentation/zeng",
+    "award": "Distinguished Artifact Award"
+  },
+  {
+    "title": "Speeding Up Write-Read Orders in Disaggregated Storage",
+    "authors": [
+      "Shaoxun Zeng",
+      "Xiaojian Liao",
+      "Hao Guo",
+      "Jiwu Shu",
+      "Youyou Lu"
+    ],
+    "venue": "ACM Transactions on Storage",
+    "short": "ACM ToS'26",
+    "year": 2026,
+    "link": "https://dl.acm.org/doi/10.1145/3829363"
+  },
+  {
+    "title": "WeDLM: Reconciling Diffusion Language Models with Standard Causal Attention for Fast Inference",
+    "authors": [
+      "Aiwei Liu",
+      "Minghua He",
+      "Shaoxun Zeng",
+      "Linhao Zhang",
+      "Chuhan Wu",
+      "Wei Jia",
+      "Yuan Liu",
+      "Yang Yu",
+      "Xiao Zhou",
+      "Jie Zhou"
+    ],
+    "venue": "International Conference on Machine Learning",
+    "short": "ICML'26",
+    "year": 2026,
+    "link": "https://arxiv.org/abs/2512.22737",
+    "award": "Oral"
+  },
+  {
+    "title": "Weaver: Efficient Multi-LLM Serving with Attention Offloading",
+    "authors": [
+      "Shiwei Gao",
+      "Qing Wang",
+      "Shaoxun Zeng",
+      "Youyou Lu",
+      "Jiwu Shu"
+    ],
+    "venue": "USENIX Annual Technical Conference",
+    "short": "USENIX ATC'25",
+    "year": 2025,
+    "link": "https://www.usenix.org/conference/atc25/presentation/gao"
+  },
+  {
+    "title": "Frugal: Efficient and Economic Embedding Model Training with Commodity GPUs",
+    "authors": [
+      "Minhui Xie",
+      "Shaoxun Zeng",
+      "Hao Guo",
+      "Shiwei Gao",
+      "Youyou Lu"
+    ],
+    "venue": "The 30th Conference on Architectural Support for Programming Languages and Operating Systems",
+    "short": "ASPLOS'25",
+    "year": 2025,
+    "link": "https://dl.acm.org/doi/10.1145/3669940.3707245"
+  },
+  {
+    "title": "Medusa: Accelerating Serverless LLM Inference with Materialization",
+    "authors": [
+      "Shaoxun Zeng",
+      "Minhui Xie",
+      "Shiwei Gao",
+      "Youmin Chen",
+      "Youyou Lu"
+    ],
+    "venue": "The 30th Conference on Architectural Support for Programming Languages and Operating Systems",
+    "short": "ASPLOS'25",
+    "year": 2025,
+    "link": "https://dl.acm.org/doi/10.1145/3669940.3707285"
+  },
+  {
+    "title": "Volley: Accelerating Write-Read Orders in Disaggregated Storage",
+    "authors": [
+      "Shaoxun Zeng",
+      "Xiaojian Liao",
+      "Hao Guo",
+      "Youyou Lu"
+    ],
+    "venue": "The 19th European Conference on Computer Systems",
+    "short": "EuroSys'24",
+    "year": 2024,
+    "link": "https://dl.acm.org/doi/10.1145/3627703.3650090"
+  },
+  {
+    "title": "面向高速硬件的高性能文件系统",
+    "authors": [
+      "Youyou Lu",
+      "Hao Guo",
+      "Shaoxun Zeng",
+      "Yitian Yang"
+    ],
+    "venue": "中国计算机学会通讯",
+    "short": "CCCF",
+    "year": 2024,
+    "link": "https://storage.cs.tsinghua.edu.cn/papers/%E9%9D%A2%E5%90%91%E9%AB%98%E9%80%9F%E7%A1%AC%E4%BB%B6%E7%9A%84%E9%AB%98%E6%80%A7%E8%83%BD%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F.pdf"
+  },
+  {
+    "title": "SingularFS: A Billion-Scale Distributed File System Using a Single Metadata Server",
+    "authors": [
+      "Hao Guo",
+      "Youyou Lu",
+      "Wenhao Lv",
+      "Xiaojian Liao",
+      "Shaoxun Zeng",
+      "Jiwu Shu"
+    ],
+    "venue": "USENIX Annual Technical Conference",
+    "short": "USENIX ATC'23",
+    "year": 2023,
+    "link": "https://www.usenix.org/conference/atc23/presentation/guo"
+  }
+]
