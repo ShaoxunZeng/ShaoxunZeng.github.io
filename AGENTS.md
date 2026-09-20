@@ -60,3 +60,5 @@ To update publications: edit `papers/publications.json`, then run `bash build.sh
 To update page content (bio, research section, links, etc.): edit `js_index.html`, then run `bash build.sh`.
 
 Never manually edit `index.html` — it is overwritten on every build.
+
+Education content check (2026-09-20): removed the redundant `Education:` paragraph from [js_index.html](js_index.html), keeping the section heading. Browser checks passed for both the template and generated [index.html](index.html): one Education heading, three education entries, and all nine publications.
