@@ -43,6 +43,8 @@ Use `js_index.html` for live development (dynamic JS), then run the build to reg
 ### Content data
 - **`papers/publications.json`** — single source of truth for all publications. Each entry has: `title`, `authors` (array), `venue`, `short`, `year` (integer), `link`, and optional `code` and `award` fields. Publications are grouped by year (descending) in the rendered output. The author "Shaoxun Zeng" is bold/highlighted automatically.
 - `year` must be an integer (not a string). `link` and `code` should be a URL string or `null`; omitting them is also acceptable.
+- Set `status` to `"preprint"` to show an entry in the separate Preprints section. Entries without this status remain in Publications.
+- Optional `equal_contribution` lists exact author names to mark with a superscript `*`, without a separate explanatory note. Keep the `authors` values free of marker characters.
 - Awards shorter than 30 characters are displayed inline after the venue; longer awards appear on a new line below.
 - Papers with no `link` render the title as plain text (no `<a>` tag); do not use `"link": ""` as a substitute for no link — use `null` or omit the field.
 

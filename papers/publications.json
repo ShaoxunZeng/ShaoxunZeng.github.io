@@ -1,5 +1,23 @@
 [
   {
+    "title": "WeEnv: The Environment for Agentic Reinforcement Learning at WeChat",
+    "authors": [
+      "Yang Yu",
+      "Jing Lei",
+      "Shaoxun Zeng",
+      "Xinyu Gao",
+      "Jindi Shi",
+      "Ci Lei",
+      "Junjie Zhang"
+    ],
+    "equal_contribution": ["Yang Yu", "Jing Lei", "Shaoxun Zeng"],
+    "status": "preprint",
+    "venue": "arXiv preprint arXiv:2609.30766",
+    "short": "arXiv",
+    "year": 2026,
+    "link": "https://arxiv.org/abs/2609.30766"
+  },
+  {
     "title": "GPU Checkpoint/Restore Made Fast and Lightweight",
     "authors": [
       "Shaoxun Zeng",

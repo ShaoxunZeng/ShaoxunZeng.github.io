@@ -15,6 +15,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  overflow-wrap: anywhere;
   color: #1a1a1a;
   background: #fff;
   font-size: 16px;
@@ -106,6 +107,7 @@ body {
   z-index: 10;
   display: flex;
   gap: 1.75rem;
+  flex-wrap: wrap;
   padding: 0.7rem 0;
   margin-bottom: 2rem;
   background: #fff;
@@ -308,13 +310,13 @@ a:focus-visible {
 }
 
 /* ===== 论文与奖项 ===== */
-#paper-list {
+.paper-list {
   display: grid;
   grid-template-columns: 4rem minmax(0, 1fr);
   column-gap: 1.5rem;
 }
 
-#paper-list > ul {
+.paper-list > ul {
   margin: 0 0 1.35rem;
   padding: 0;
   list-style: none;
@@ -368,25 +370,25 @@ a:focus-visible {
 }
 
 /* 论文条目：与正文行高一致，上下 padding 对称 */
-#paper-list li {
+.paper-list li {
   margin: 0;
   line-height: 1.45;
   padding: 0.65rem 0;
   border-top: 1px solid #f0f0f0;
 }
 
-#paper-list li:first-child {
+.paper-list li:first-child {
   border-top: none;
   padding-top: 0;
 }
 
-#paper-list li:last-child {
+.paper-list li:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
 /* 年份分组标题 */
-#paper-list h3 {
+.paper-list h3 {
   margin: 0;
   padding-top: 0.65rem;
   font-size: 1rem;
@@ -396,11 +398,11 @@ a:focus-visible {
   text-transform: uppercase;
 }
 
-#paper-list > h3:first-child {
+.paper-list > h3:first-child {
   padding-top: 0;
 }
 
-#paper-list > h3:first-child + ul > li:first-child {
+.paper-list > h3:first-child + ul > li:first-child {
   padding-top: 0;
 }
 
@@ -485,24 +487,24 @@ footer p {
     margin-bottom: 2rem;
   }
 
-  #paper-list {
+  .paper-list {
     display: block;
   }
 
-  #paper-list h3 {
+  .paper-list h3 {
     padding-top: 0;
     margin: 1.75rem 0 0.2rem;
   }
 
-  #paper-list > h3:first-child {
+  .paper-list > h3:first-child {
     margin-top: 0;
   }
 
-  #paper-list > ul {
+  .paper-list > ul {
     margin-bottom: 0;
   }
 
-  #paper-list li {
+  .paper-list li {
     padding: 0.55rem 0;
   }
 }
